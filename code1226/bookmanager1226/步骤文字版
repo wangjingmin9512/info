@@ -1,0 +1,18 @@
+# TODO 1226第一步 注册安装子应用book 不要忘了逗号
+# TODO 1226第二步 导django红线报错,设置安装了django的解释器 -- py3_wjm_1224
+# TODO 1226第三步 创建模型类BookInfo 和 PeopleInfo
+# TODO 1226第四步 设置数据库为mysql
+# TODO 1226第五步.定义函数,用户访问指定url返回结果
+# TODO 1226第六步.URLconf配置--工程中
+# TODO 1226第七步.URLconf配置-子应用中
+# TODO 1226第八步 执行迁移
+# TODO 1226第九步 访问127.0.0.1:8000/index/网址测试是否运行成功
+#                桌面终端选择bookmanager1226查看是否生成两个数据表--bookinfo和peopleinfo
+# TODO 1226第十步 桌面终端在两个数据表中分别插入指定数据 insert into...
+# TODO 第十一步见book.views.py
+HttpRequest
+        4大种
+            1.GET方式 url的  1/100
+            2.GET方式 查询字符串的
+            3.POST方式 form data
+            4.POST方式 non form
