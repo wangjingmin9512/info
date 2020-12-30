@@ -1,0 +1,47 @@
+<!-- 保存后 html + tab生成html骨架 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- step1.导入Vue  -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<!-- step2.定义一个标签盛放html -->
+	<div id="app">
+		<a href="#">{{msg}}</a>
+		<h1>{{name}}</h1>
+		<a v-bind:href="home">点击访问传智首页</a>
+		<!-- if -->
+		<a href="#" v-if='seen'>seen值为true页面能看到，false看不到</a>
+		<!-- if else -->
+		<span v-if='islogin'>已登录则访问个人中心</span>
+		<span v-else>未登录，需登录</span>
+		<!-- if else if ... else  -->
+		<span v-if = 'level === 1'>国王</span>
+		<span v-else-if = 'level === 2'>皇亲</span>
+		<span v-else-if = 'level === 3'>国戚</span>
+		<span v-else>平民</span>
+
+
+	</div>
+</body>
+<!-- step3.创建Vue实例 -->
+<script type="text/javascript">
+	<!-- var--变量声明 vm--变量名 = new--关键字 Vue()--创建实例对象 -->
+	var vm = new Vue({
+		el: '#app', // el固定写法  获取html中标签id为app的元素
+		data: {    // data固定写法 用于存放变量
+			msg:'hello',  //可以理解为 变量名： 值
+			name: 'itcast',
+			home: 'www.itcast.cn',
+			seen: true,
+			islogin: false,
+			level: 2
+		}
+
+	})
+
+
+</script>
+</html>

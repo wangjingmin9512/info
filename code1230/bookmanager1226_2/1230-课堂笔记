@@ -1,0 +1,8 @@
+面向对象 通过类
+使用面向对象去实现视图函数--类视图
+
+# 面向过程 -- 函数 定义视图函数
+def test(request):
+    return HttpResponse('面向过程视图函数')
+   添加path('test/',test),
+使用postman发送POST请求
